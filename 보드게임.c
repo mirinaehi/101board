@@ -47,6 +47,7 @@ void main(void)
 		if (position > 60)
 		{
 			printf("축하합니다. 목적지에 도착하셨습니다.\n");
+			break;
 		}
 	}
 	
