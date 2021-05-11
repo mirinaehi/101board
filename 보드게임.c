@@ -37,7 +37,7 @@ void main(void)
 	// 던진 주사위값을 현재 위치에 적용
 	position += dice;
 	printf("현재위치 : %d\n\n", position);
-
+	getchar();
 
 	/* 두 번째 던짐 */
 	// 주사위는 1 ~ 6까지 나오게 설정
@@ -47,6 +47,8 @@ void main(void)
 	// 던진 주사위값을 현재 위치에 적용
 	position += dice;
 	printf("현재위치 : %d\n\n", position);
+	getchar();
+
 
 
 }
