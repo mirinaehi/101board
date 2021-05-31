@@ -47,27 +47,27 @@ void main(void)
 		printf("현재위치 : %d, 현재금액 : %lld \n\n", position, money);
 		
 		// TEST CODE
-		// position = 59;
+		// position = 20;
 
-		if (position == 20)
+		switch (position)
 		{
+		case 20:
 			printf("기부천사 - *위치 20*에 있을때 재산의 20%%를 사회에 기부합니다. \n");
 			money = (long long)(money * 0.8);
 			printf("현재위치 : %d, 현재금액 : %lld \n\n", position, money);
-		}
+			break;
 
-		if (position == 30)
-		{
+		case 30:
 			printf("위치 30에 있을때, 주사위 던진만큼 더 나아갑니다.\n");
 			position += dice;
 			printf("현재위치 : %d, 현재금액 : %lld \n\n", position, money);
-		}
+			break;
 
-		if (position == 59)
-		{
+		case 59:
 			printf("위치 59에 있을때, 처음 지점으로 돌아갑니다.\n");
 			position = 0;
 			printf("현재위치 : %d, 현재금액 : %lld \n\n", position, money);
+			break;
 		}
 
 		if (position > 60)
