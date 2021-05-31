@@ -56,6 +56,13 @@ void main(void)
 			printf("현재위치 : %d, 현재금액 : %lld \n\n", position, money);
 		}
 
+		if (position == 30)
+		{
+			printf("위치 30에 있을때, 주사위 던진만큼 더 나아갑니다.\n");
+			position += dice;
+			printf("현재위치 : %d, 현재금액 : %lld \n\n", position, money);
+		}
+
 		if (position == 59)
 		{
 			printf("위치 59에 있을때, 처음 지점으로 돌아갑니다.\n");
