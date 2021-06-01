@@ -47,7 +47,7 @@ void main(void)
 		printf("현재위치 : %d, 현재금액 : %lld \n\n", position, money);
 		
 		// TEST CODE
-		// position = 20;
+		// position = 10;
 
 		switch (position)
 		{
@@ -55,9 +55,9 @@ void main(void)
 		case 10:
 			printf("*위치 10*에 있을때 주사위를 다시 던집니다. \n");
 			getchar();
-			dice = rand() % 6 + 1;
-			money += 100000 * dice;
-			printf("주사위가 %d이(가) 나와서 %d원을 획득하였습니다. \n", dice, 100000 * dice);
+			int dice_money = rand() % 6 + 1;
+			money += 100000 * dice_money;
+			printf("주사위가 %d이(가) 나와서 %d원을 획득하였습니다. \n", dice_money, 100000 * dice_money);
 			printf("현재위치 : %d, 현재금액 : %lld \n\n", position, money);
 			break;
 
