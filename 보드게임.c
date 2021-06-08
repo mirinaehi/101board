@@ -78,6 +78,12 @@ void main(void)
 			position = 0;
 			printf("현재위치 : %d, 현재금액 : %d \n\n", position, money);
 			break;
+
+		case 60:
+			printf("끝 점에 있을때, 금액이 2배가 됩니다.\n");
+			money *= 2;
+			printf("현재위치 : %d, 현재금액 : %d \n\n", position, money);
+			break;
 		}
 		
 		// 범위를 지정해야 하는 조건에는 switch문이 불가능하다
