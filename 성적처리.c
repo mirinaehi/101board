@@ -1,21 +1,6 @@
 ﻿#include <stdio.h>
 
-// 입력받은 점수(score)에 대한 등급을 출력
-void cal_grade(int score)
-{
-	if (90 <= score && score <= 100)
-		printf("A");
-	else if (80 <= score && score < 90)
-		printf("B");
-	else if (70 <= score && score < 80)
-		printf("C");
-	else if (60 <= score && score < 70)
-		printf("D");
-	else
-		printf("E");
-
-	printf("\n");
-}
+void cal_grade(int score);
 
 void main(void)
 {
@@ -38,4 +23,21 @@ void main(void)
 	scanf("%d", &CA_score);
 
 	cal_grade(CA_score);
+}
+
+// 입력받은 점수(score)에 대한 등급을 출력
+void cal_grade(int score)
+{
+	if (90 <= score && score <= 100)
+		printf("A");
+	else if (80 <= score && score < 90)
+		printf("B");
+	else if (70 <= score && score < 80)
+		printf("C");
+	else if (60 <= score && score < 70)
+		printf("D");
+	else
+		printf("E");
+
+	printf("\n");
 }
