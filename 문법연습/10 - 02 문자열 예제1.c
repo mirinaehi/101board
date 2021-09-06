@@ -1,8 +1,8 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 
 void main(void)
 {
-	// NULL¹®ÀÚ('\0')°¡ ÀÚµ¿À¸·Î Æ÷ÇÔ
+	// NULLë¬¸ì('\0')ê°€ ìë™ìœ¼ë¡œ í¬í•¨
 	char str[20] = "Hello World";
 
 	char str2[20] = {
