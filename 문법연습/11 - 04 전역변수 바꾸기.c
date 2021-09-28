@@ -13,5 +13,5 @@ void main(void)
 
 void changeA(void)
 {
-	A = 5;
+	A = 3;
 }
